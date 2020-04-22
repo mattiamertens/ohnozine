@@ -1,7 +1,7 @@
 /* 
-theme name: GoodTheme
+theme name: GoodThemeNew
 Author: It'sa Gurki
-Version: mille
+Version: mille + 1.1
 */
 @font-face {
     font-family: "ATSurt";
@@ -51,6 +51,40 @@ a{
     text-decoration: none;
     color: #002d57;
 }
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.svg_loader{
+    margin: 30px;
+}
+.text_loader:after{
+    content: 'Loading & optimizing 3D model';
+    animation: loading 2s infinite;
+    font-size: 30px;
+}
+@keyframes loading{
+    0%{
+        content: 'Loading & optimizing 3D model';
+    }
+    25%{
+        content: 'Loading & optimizing 3D model.';
+    }
+    50%{
+        content: 'Loading & optimizing 3D model..';
+    }
+    75%{
+        content: 'Loading & optimizing 3D model...';
+    }
+
+}
 
 .home, .blog {
     width: 100vw;
@@ -65,15 +99,6 @@ a{
     height: 50%;
     width: 50%;
 }
-/* .zoom_in{
-    animation: zoom 2s both;
-}
-@keyframes zoom {
-    from{}
-    to{
-        transform: scale(5);
-    }
-} */
 .title{
     font-family: Ogg, serif;
     font-size: 94px;
@@ -117,8 +142,8 @@ a{
       -webkit-transform: scale(0.8);
               transform: scale(0.8);
     }
-  }
-  @keyframes scale-down-center {
+}
+@keyframes scale-down-center {
     0% {
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -153,7 +178,6 @@ a{
     fill: #001930;
 }
 #arrow{
-    /* animation: down 1.5s cubic-bezier(.2,1,.49,.28) infinite; */
     animation: bounce 1.5s infinite;
     transform-origin: center;
     transform-box: fill-box;
@@ -173,17 +197,10 @@ a{
     }
 }
 
-
-
 /* EXPERIENCE WRAPPERS */
-.experience_container{
-    /* pointer-events: none;
-    user-select: none;  */
-}
 .exp_wrapper{
     height: auto;
     min-height: 700px;
-    /* width: 100% !important; */
 }
 #Livello_1{
     position: absolute;
@@ -259,9 +276,8 @@ a{
 
 /* MOBILE VERSION */
 @media all and (max-width:600px) {
-    .move{
-        left: 90%;
-        display: block;
+    .text_loader:after{
+        font-size: 18px;
     }
     .no_vis{
         opacity: 0;

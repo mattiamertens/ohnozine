@@ -4,8 +4,7 @@ var loader, model;
 var width = window.innerWidth;
 var height = window.innerHeight;
 var clock = new THREE.Clock();
-var pscale = 7.5;
-var big = 20;
+var pscale = 30;
 var grande = 70;
 var container = $('.container');
 
@@ -25,14 +24,6 @@ var container = $('.container');
 //     console.log(pageX, pageY);
 // });
 
-// non lo so manco io se mi serve
-// var cappellino = new THREE.Object3D();
-// var manager = new THREE.LoadingManager();
-// manager.onLoad = function () {
-//     scene.add(cappellino);
-// }
-// var loader = new THREE.JSONLoader(manager);
-
 function init() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(40, width / height, 10, 500);
@@ -41,18 +32,9 @@ function init() {
         alpha: true,
         preserveDrawingBuffer: true
     });
-    // renderer.setClearColor( 0x00ff00, 0);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize($(container).width(), $(container).height());
     var canvas = renderer.domElement;
-
-
-    // obj follows mouse
-    // var raycaster = new THREE.Raycaster();
-    // var mouse = new THREE.Vector2();
-    // var pointOfIntersection = new THREE.Vector3();
-    // canvas.addEventListener("mousemove", onMouseMove, false);
-    // var plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), -10);
 
 
     // CONTROLLO DELLA CAMERA
@@ -112,7 +94,7 @@ function init() {
     // });
 
     var hat_loader = new THREE.GLTFLoader();
-    hat_loader.load('wp-content/themes/GoodTheme/js/GLTF/cappellino.gltf', function ( gltf ) {
+    hat_loader.load('wp-content/themes/GoodTheme/js/GLTF/leggero.gltf', function ( gltf ) {
         hat = gltf.scene;
         scene.add( hat );
         gltf.scene.position.set(-0, 0, 10);
@@ -160,10 +142,8 @@ animate();
 
 $(window).resize(function () {
     // camera.aspect = window.innerWidth / window.innerHeight;
-    // renderer.setSize(window.innerWidth, window.innerHeight);
+
     camera.aspect = $(container).width()/ $(container).height();
     renderer.setSize($(container).width(), $(container).height());
     camera.updateProjectionMatrix();
-    // console.log('bnnn')
-    // renderer.setSize($(container).width(), $(container).height());
 });
