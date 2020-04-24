@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('.disclaimer').delay(1000).addClass('scale-down-center');
     $('.loader').delay(1200).slideUp(400);
 });
+
+
 // $(window).on('load', function(){
 //     $('.loader').fadeOut();    
 // });
@@ -38,4 +40,9 @@ $('.exp_wrapper').each(function(){
 $('.hamb_menu').click(function(){
     $('.menu_container').toggleClass('slide_in');
 
+});
+$(document).keyup(function(e) {
+    if(e.keyCode == 27) {
+        $('.menu_container').removeClass('slide_in');
+    }
 });
