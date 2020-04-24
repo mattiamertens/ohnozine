@@ -36,7 +36,7 @@
         <style>
         .cls-1 {
             fill: none;
-            stroke: #001930;
+            stroke: #002d57;
             stroke-linecap: round;
             stroke-linejoin: round;
             stroke-width: 2.83px;
@@ -68,7 +68,8 @@
         </svg>
     </div>
     <div class="text_menu">
-        This is a one page website, what where you thinking you would find?
+        This is a one page website, what where you thinking you would find? <br>
+        but you might want to check my out on <a href="insta.cm" class='underlined'>instagram</a>
     </div>
 </div>
 
