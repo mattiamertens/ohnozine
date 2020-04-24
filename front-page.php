@@ -4,11 +4,11 @@
         <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" width="97.44" height="46.01" viewBox="0 0 97.44 46.01">
             <defs>
                 <style>
-                .cls-1 {
+                .cls-3 {
                     fill: #002d57;
                 }
 
-                .cls-1, .cls-2 {
+                .cls-3, .cls-2 {
                     stroke: #eae7d9;
                     stroke-miterlimit: 10;
                     stroke-width: 0.5px;
@@ -20,7 +20,7 @@
                 </style>
             </defs>
             <g>
-                <path class="cls-1" d="M23.92,55.77c-.08-25.94,34.35-27.89,34.35-27.89l.39-.75h4.42v.62c45.46,5,34.29,35.37,34.29,35.37-7.13,8.75-41.14,8.21-41.14,8.21C-3.8,78,.77,60.82,2,59.1,4.4,55.77,22.72,55.78,23.92,55.77Z" transform="translate(-1.28 -27)"/>
+                <path class="cls-3" d="M23.92,55.77c-.08-25.94,34.35-27.89,34.35-27.89l.39-.75h4.42v.62c45.46,5,34.29,35.37,34.29,35.37-7.13,8.75-41.14,8.21-41.14,8.21C-3.8,78,.77,60.82,2,59.1,4.4,55.77,22.72,55.78,23.92,55.77Z" transform="translate(-1.28 -27)"/>
                 <path class="cls-2" d="M56.23,71.33S25.94,62.72,23.92,55.77" transform="translate(-1.28 -27)"/>
             </g>
         </svg>
@@ -148,6 +148,9 @@
         </div>
        
     </div>
+    
+    <div class="spacer"></div>
 
 </div>
+<div class="drawing"></div>
 <?php get_footer();?>
