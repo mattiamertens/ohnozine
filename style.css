@@ -107,6 +107,7 @@ a{
     top: 3%;
     height: 40px;
     width: 40px;
+    z-index: 9
 }
 .hamburger_menu_close{
     position: absolute;
@@ -320,6 +321,25 @@ a{
 @media all and (max-width:600px) {
     .text_loader:after{
         font-size: 18px;
+    }
+    .hamburger_menu{
+        right: 2.4%;
+        top: 2.7%;
+        z-index: 9;
+    }
+    .hamburger_menu_close{
+        position: absolute;
+        top: 3%;
+        left: 80%
+    }
+    .menu_container{
+        right: -60%;
+        width: 60vw;
+
+    }
+    .slide_in{
+        right: 0%;
+        top: 0%;
     }
     .container{
         top: 30%;
