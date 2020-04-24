@@ -29,6 +29,52 @@
 </div>
 <div class="container"></div>
 
+<!-- FAKE HAMBURGER MENU -->
+<div class="hamburger_menu hamb_menu">
+    <svg id="hamb menu normal" data-name="hamb menu" xmlns="http://www.w3.org/2000/svg" width="38.29" height="12.75" viewBox="0 0 38.29 12.75">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: none;
+            stroke: #001930;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2.83px;
+        }
+        </style>
+    </defs>
+    <line class="cls-1" x1="1.41" y1="11.33" x2="36.88" y2="11.33"/>
+    <line class="cls-1" x1="16.4" y1="1.41" x2="36.88" y2="1.41"/>
+    </svg>
+</div>
+
+<div class="menu_container">
+    <div class="hamburger_menu_close hamb_menu">
+        <svg id="hamburger menu close" data-name="hamburger menu close" xmlns="http://www.w3.org/2000/svg" width="38.1" height="23.2" viewBox="0 0 38.1 23.2">
+            <defs>
+                <style>
+                .cls-4 {
+                    fill: none;
+                    stroke: #eae7d9;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2.83px;
+                }
+                </style>
+            </defs>
+            <line class="cls-4" x1="36.46" y1="11.62" x2="1.41" y2="11.62"/>
+            <line class="cls-4" x1="36.69" y1="11.62" x2="25.1" y2="21.79"/>
+            <line class="cls-4" x1="36.69" y1="11.58" x2="25.1" y2="1.41"/>
+        </svg>
+    </div>
+    <div class="text_menu">
+        This is a one page website, what where you thinking you would find?
+    </div>
+</div>
+
+
+
+
 <div class="margin-wrapper">
     <div class="landing">
         <p class="disclaimer">try to interact with <br>  the little 3D model! </p>
@@ -93,7 +139,7 @@
         <!-- HOMAGE -->
         <div class="exp_wrapper">
             <div id="Livello_1"></div>
-            <div class="title exp_title">A tribute </div>
+            <div class="title exp_title">A true <br> homage </div>
             <div class="description">
             Now that you’ve made it so far and understood this whole website is an homage to “his loyalty“ 
             and we’ve been separated from the beginning when you started scrolling, please give me my hat back.

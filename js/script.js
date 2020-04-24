@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.disclaimer').addClass('scale-down-center');
-    $('.loader').delay(600).slideUp(400);
+    $('.loader').delay(1200).slideUp(400);
 });
 // $(window).on('load', function(){
 //     $('.loader').fadeOut();    
@@ -33,5 +33,9 @@ $('.exp_wrapper').each(function(){
     })
     // .reverse(false)
     .addTo(controller);
+});
 
+$('.hamb_menu').click(function(){
+    $('.menu_container').toggleClass('slide_in');
+    
 });
