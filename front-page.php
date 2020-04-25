@@ -69,7 +69,7 @@
     </div>
     <div class="text_menu">
         This is a one page website, what where you thinking you would find? <br>
-        But you might want to check my out on <a href="https://www.instagram.com/maats__/" class='underlined'>instagram</a>
+        But you might want to check me out on <a href="https://www.instagram.com/maats__/" class='underlined'>instagram</a>
     </div>
 </div>
 
