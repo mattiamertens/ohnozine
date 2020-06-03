@@ -15,22 +15,6 @@ function include_jquery() {
 }
 add_action( 'wp_enqueue_scripts', 'include_jquery' );
 
-// three.js library
-function load_threejs(){
-    wp_enqueue_script('threejs', get_template_directory_uri() . '/js/three.min.js', '', 1, true);
-    wp_enqueue_script('GLTFLoader', get_template_directory_uri() . '/js/loaders/GLTFLoader.js', '', 1, true);
-    wp_enqueue_script('OrbitControls', get_template_directory_uri() . '/js/libs/OrbitControls.js', '', 1, true);
-    wp_enqueue_script('JSONLoader', get_template_directory_uri() . '/js/loaders/JSONLoader.js', '', 1, true);
-}
-add_action( 'wp_enqueue_scripts', 'load_threejs');
-
-// 3D mainscene.js
-function threejs_scene(){
-    wp_register_script('3dmodel_scene', get_template_directory_uri() . '/js/mainscene.js', '', 1, true);
-    wp_enqueue_script('3dmodel_scene');
-}
-add_action( 'wp_enqueue_scripts', 'threejs_scene');
-
 // ScrollMagic
 function ScrollMagic(){
     wp_enqueue_script('ScrollMagic_library', get_template_directory_uri() . '/js/ScrollMagic.min.js', '', 1, true);
